@@ -1,5 +1,5 @@
 import React from "react";
-import pokedex from "../Assets/Images/pokedex.png";
+import pokedex from "../Assets/Images/pokedex.jpg";
 import pizzeria from "../Assets/Images/pizzeria.png";
 import amongus from "../Assets/Images/among-us.jpg";
 import tunisia from "../Assets/Images/tunisia.jpg";

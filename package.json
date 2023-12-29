@@ -4,7 +4,10 @@
   "description": "Web portfolio made with React.js",
   "main": "src/index.js",
   "babel": {
-    "presets": ["@babel/preset-env", "react-app"]
+    "presets": [
+      "@babel/preset-env",
+      "react-app"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,6 +45,14 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.23.6"
+    "@babel/preset-env": "^7.23.6",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "eslintConfig": {
+    "plugins": ["react-hooks"],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   }
 }

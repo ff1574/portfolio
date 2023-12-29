@@ -1,38 +1,75 @@
 import React from "react";
+import pokedex from "../Assets/Images/pokedex.png";
+import pizzeria from "../Assets/Images/pizzeria.png";
+import amongus from "../Assets/Images/among-us.jpg";
+import tunisia from "../Assets/Images/tunisia.jpg";
+import openai from "../Assets/Images/openai.png";
+import dadbot from "../Assets/Images/dad-bot.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      name: "Project 1",
-      description: "This is a brief description of Project 1.",
-      liveLink: "http://www.project1.com",
-      codeLink: "http://www.github.com/username/project1",
+      name: "Pokedex App",
+      description:
+        "Created a mobile app using React Native that connects to PokeAPI REST which displays Pokemon and information about them.",
+      link: "https://github.com/ff1574/pokedex",
+      image: pokedex,
     },
     {
-      name: "Project 2",
-      description: "This is a brief description of Project 2.",
-      liveLink: "http://www.project2.com",
-      codeLink: "http://www.github.com/username/project2",
+      name: "Pizzeria Website",
+      description:
+        "Created a responsive website for Il Mondo Pizzeria using HTML, CSS, and JS.",
+      link: "http://www.ilmondopizzeria.hr/",
+      image: pizzeria,
+    },
+    {
+      name: "Among Us Game",
+      description:
+        "Created an “Among Us”-like game with a college classmate using JavaFX from scratch.",
+      link: "https://github.com/ff1574/among-us",
+      image: amongus,
+    },
+    {
+      name: "Tunisia Website",
+      description:
+        "Created a responsive website for an individual college project using PHP, HTML, CSS, and JS.",
+      link: "https://github.com/ff1574/tunisia-website",
+      image: tunisia,
+    },
+    {
+      name: "OpenAI API App",
+      description:
+        "Created a JavaFX app that connects to the OpenAI API, allows manipulating the AI response via sliders for temperature and max tokens.",
+      link: "https://github.com/ff1574/open-AI",
+      image: openai,
+    },
+    {
+      name: "Discord Bot",
+      description:
+        "As a personal project I have created a discord bot using JS, hosted off my computer via Node.js.",
+      link: "https://github.com/ff1574/dad-bot",
+      image: dadbot,
     },
     // Add more projects as needed
   ];
 
   return (
-    <div>
+    <div className="projects-div">
       <h2>My Projects</h2>
-      {projects.map((project, index) => (
-        <div key={index}>
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
-          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-            Live Version
-          </a>
-          <br />
-          <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
-            Source Code
-          </a>
-        </div>
-      ))}
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <div key={index} className="project-item">
+            <div className="project-image">
+              <img src={project.image} alt={project.name} />
+              <div className="project-name">{project.name}</div>
+            </div>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              Link
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

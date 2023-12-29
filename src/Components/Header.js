@@ -1,27 +1,78 @@
-import React, { useEffect, useState } from "react";
 import {
-  AnimatePresence,
   motion,
-  useInView,
-  useAnimation,
+  useMotionValue,
+  useTransform,
+  animate,
 } from "framer-motion/dist/framer-motion";
+import { useEffect } from "react";
 import portrait from "../Assets/Images/portrait.png";
 
-const Header = () => {
-  // Array of titles to be displayed
-  const titles = ["Full Stack Developer", "Spring Boot", "React.js", "MSSQL"];
+export default function Header() {
+  const titleIndex = useMotionValue(0);
+  const titles = [
+    "Full Stack Developer",
+    "React.js",
+    "Spring Boot",
+    "React Native",
+    "MSSQL",
+  ];
 
-  // Render the header component
+  const baseTitle = useTransform(titleIndex, (latest) => titles[latest] || "");
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
+  const displayTitle = useTransform(rounded, (latest) =>
+    baseTitle.get().slice(0, latest)
+  );
+  const updatedThisRound = useMotionValue(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      animate(count, 60, {
+        type: "tween",
+        duration: 2,
+        ease: "easeIn",
+        repeat: Infinity,
+        repeatType: "reverse",
+        repeatDelay: 1,
+        onUpdate(latest) {
+          if (updatedThisRound.get() === true && latest > 0) {
+            updatedThisRound.set(false);
+          } else if (updatedThisRound.get() === false && latest === 0) {
+            if (titleIndex.get() === titles.length - 1) {
+              titleIndex.set(0);
+            } else {
+              titleIndex.set(titleIndex.get() + 1);
+            }
+            updatedThisRound.set(true);
+          }
+        },
+      });
+    }, 3000); // delay the start of the text animation by 3 seconds
+    return () => clearTimeout(timer); // clear the timer when the component unmounts
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <header>
+    <header className="header-div">
       <div className="title-div">
         <h1>Hi! My name is</h1>
-        <img src={portrait} alt="Portrait" className="portrait-image" />
+        <motion.img
+          src={portrait}
+          alt="Portrait"
+          className="portrait-image"
+          initial={{ opacity: 0, x: 300 }} // start from the right
+          animate={{ opacity: 1, x: 0 }} // end at the final position
+          transition={{
+            delay: 1,
+            duration: 1,
+            type: "spring",
+            stiffness: 200, // increase stiffness
+            damping: 10, // decrease damping
+          }} // more pronounced spring bounce effect
+        />
         <h1>Franko</h1>
-        {/* TODO: TITLE ANIMATIONS */}
+        <motion.h2 className="title-animation">{displayTitle}</motion.h2>
       </div>
     </header>
   );
-};
-
-export default Header;
+}

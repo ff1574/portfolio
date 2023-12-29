@@ -1,35 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import {
+  AnimatePresence,
+  motion,
+  useInView,
+  useAnimation,
+} from "framer-motion/dist/framer-motion";
 import portrait from "../Assets/Images/portrait.png";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Header = () => {
-  const [titles, setTitles] = useState([
-    "Full Stack Developer",
-    "React",
-    "MSSQL",
-    "Spring Boot",
-  ]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Array of titles to be displayed
+  const titles = ["Full Stack Developer", "Spring Boot", "React.js", "MSSQL"];
 
-  const nextTitle = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
-  };
-
+  // Render the header component
   return (
     <header>
       <div className="title-div">
         <h1>Hi! My name is</h1>
         <img src={portrait} alt="Portrait" className="portrait-image" />
         <h1>Franko</h1>
-        <TransitionGroup>
-          <CSSTransition
-            key={titles[currentIndex]}
-            timeout={500}
-            classNames="title-animation"
-          >
-            <h2>{titles[currentIndex]}</h2>
-          </CSSTransition>
-        </TransitionGroup>
+        {/* TODO: TITLE ANIMATIONS */}
       </div>
     </header>
   );

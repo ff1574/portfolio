@@ -299,6 +299,12 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* Project Modal */
     .project-modal-content {
         border-radius: 90px;

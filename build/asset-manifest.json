@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ff1574/static/css/main.5108d131.chunk.css",
+    "main.js": "/ff1574/static/js/main.77781822.chunk.js",
+    "main.js.map": "/ff1574/static/js/main.77781822.chunk.js.map",
+    "runtime-main.js": "/ff1574/static/js/runtime-main.ae444ef9.js",
+    "runtime-main.js.map": "/ff1574/static/js/runtime-main.ae444ef9.js.map",
+    "static/js/2.ccbe3aa8.chunk.js": "/ff1574/static/js/2.ccbe3aa8.chunk.js",
+    "static/js/2.ccbe3aa8.chunk.js.map": "/ff1574/static/js/2.ccbe3aa8.chunk.js.map",
+    "index.html": "/ff1574/index.html",
+    "static/css/main.5108d131.chunk.css.map": "/ff1574/static/css/main.5108d131.chunk.css.map",
+    "static/js/2.ccbe3aa8.chunk.js.LICENSE.txt": "/ff1574/static/js/2.ccbe3aa8.chunk.js.LICENSE.txt",
+    "static/media/among-us.2dd93716.jpg": "/ff1574/static/media/among-us.2dd93716.jpg",
+    "static/media/dad-bot.f20b24a4.jpg": "/ff1574/static/media/dad-bot.f20b24a4.jpg",
+    "static/media/gmail.146cf7ed.png": "/ff1574/static/media/gmail.146cf7ed.png",
+    "static/media/linkedin.9640f9e7.webp": "/ff1574/static/media/linkedin.9640f9e7.webp",
+    "static/media/openai.db76b33e.png": "/ff1574/static/media/openai.db76b33e.png",
+    "static/media/pizzeria.eb6eb963.png": "/ff1574/static/media/pizzeria.eb6eb963.png",
+    "static/media/pokedex.701b5c4f.jpg": "/ff1574/static/media/pokedex.701b5c4f.jpg",
+    "static/media/portrait.fe9ee103.png": "/ff1574/static/media/portrait.fe9ee103.png",
+    "static/media/tunisia.1f0468cc.jpg": "/ff1574/static/media/tunisia.1f0468cc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae444ef9.js",
+    "static/js/2.ccbe3aa8.chunk.js",
+    "static/css/main.5108d131.chunk.css",
+    "static/js/main.77781822.chunk.js"
+  ]
+}

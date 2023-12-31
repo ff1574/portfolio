@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* Global styles */
+/* Global */
 
 body {
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     background-color: #1a1a1a;
     color: #f5f5f5;
@@ -14,7 +15,7 @@ body {
     padding: 0 6%;
 }
 
-/* Header styles */
+/* Header */
 .header-div {
     padding: 20px;
 }
@@ -46,7 +47,7 @@ body {
     border-radius: 100%;
 }
 
-/* About styles */
+/* About */
 .about-div {
     padding: 0 10%;
     margin-bottom: 4%;
@@ -57,13 +58,13 @@ body {
 }
 
 .keyword {
-    color: #ff6347; /* adjust as needed */
+    color: #ff6347;
     font-weight: bold;
 }
 
-/* Projects styles */
+/* Projects */
 .projects-div {
-    padding: 0 10%;
+    padding: 0 10% 5% 10%;
 }
 
 .projects-grid {
@@ -98,23 +99,177 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.project-item:hover img {
+    cursor: pointer;
+}
+
+.project-item:hover .project-name {
+    font-size: 1.6em;
+}
+
+/* Project modal */
+.project-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-modal-content {
+    position: relative;
+    background-color: #2b2b2b;
+    padding: 0;
+    width: 50%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 90px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.project-modal-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-modal-name {
     padding: 10px;
     text-align: center;
     font-weight: bold;
 }
 
-/* Footer styles */
-footer {
-    padding: 20px;
+.project-modal-description {
+    padding: 10px 10%;
     text-align: center;
 }
 
-/* Smaller screens */
-@media (max-width: 768px) {
+.project-modal-link {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-    /* Header styles */
+.close {
+    color: #fff;
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    background: rgba(255, 0, 0, 0.7);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.close:hover {
+    color: #fff;
+    background: rgba(255, 0, 0, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.animated-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto 40px auto;
+    background-color: rgb(0, 99, 248);
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 10px #999;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+  
+.animated-button:hover {
+    background-color: #00c507;
+    color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+  
+.animated-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Footer */
+footer {
+    margin: 2% 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.link-container div {
+    margin: 0 10px;
+}
+  
+.link-container div a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+  
+.link-container div a:hover {
+    color: #007BFF;
+    font-size: 1.2rem;
+}
+  
+.link-container div a img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+  
+.link-container div a:hover img {
+    transform: scale(1.2);
+}
+
+/* Smaller screens */
+@media (max-width: 1000px) {
+
+    /* Header */
     .header-div h1 {
       font-size: 2rem;
       margin: 4% 0;
@@ -125,12 +280,12 @@ footer {
         height: 2rem;
     }
 
-    /* About styles */
+    /* About */
     .about-div {
         padding: 0;
     }
 
-    /* Projects styles */
+    /* Projects */
     .projects-div {
         padding: 0;
     }
@@ -138,4 +293,15 @@ footer {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-  }
+
+    /* Project Modal */
+    .project-modal-content {
+        border-radius: 90px;
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        margin: 30% 0 10% 0;
+    }
+}

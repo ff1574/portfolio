@@ -107,12 +107,15 @@ body {
     font-weight: bold;
 }
 
-.project-item:hover img {
-    cursor: pointer;
-}
 
-.project-item:hover .project-name {
-    font-size: 1.6em;
+@media (hover: hover) and (pointer: fine) {
+    .project-item:hover img {
+        cursor: pointer;
+    }
+
+    .project-item:hover .project-name {
+        font-size: 1.6em;
+    }
 }
 
 /* Project modal */
@@ -247,10 +250,12 @@ footer {
     font-weight: bold;
     transition: color 0.3s ease, font-size 0.3s ease;
 }
-  
-.link-container div a:hover {
-    color: #007BFF;
-    font-size: 1.2rem;
+
+@media (hover: hover) and (pointer: fine) {
+    .link-container div a:hover {
+        color: #007BFF;
+        font-size: 1.2rem;
+    }
 }
   
 .link-container div a img {

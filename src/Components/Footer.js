@@ -21,7 +21,7 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <a href="https://meritpages.com/ff1574">
+          <a href="https://meritpages.com/ff1574 ">
             <img src={MeritPagesIcon} alt="Merit Pages" />
             Merit Page
           </a>

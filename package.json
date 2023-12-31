@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/ff1574"
   },
-  "homepage": "https://github.com/ff1574",
+  "homepage": ".",
   "dependencies": {
     "framer-motion": "10.0.0",
     "react": "^18.2.0",

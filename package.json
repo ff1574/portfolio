@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Web portfolio made with React.js",
   "main": "src/index.js",
+  "engines": {
+    "node": "16.13.1"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env",

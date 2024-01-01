@@ -241,7 +241,9 @@ footer {
 }
   
 .link-container div {
+    display: flex;
     margin: 0 10px;
+
 }
   
 .link-container div a {
@@ -299,12 +301,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .icon-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     /* Project Modal */
     .project-modal-content {
         border-radius: 90px;
@@ -314,5 +310,15 @@ footer {
     /* Footer */
     footer {
         margin: 30% 0 10% 0;
+    }
+}
+
+
+@media (max-width: 650px) {
+    /* Links */
+    .link-container {
+        display: grid;
+        justify-content: center;
+        gap: 20px;
     }
 }

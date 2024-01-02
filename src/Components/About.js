@@ -37,7 +37,7 @@ const About = () => {
       </p>
       <h3>Languages</h3>
       <p>
-        Fluent in <span className="keyword">English</span> and{" "}
+        Fluent in <span className="keyword">English</span>,{" "}
         <span className="keyword">Croatian</span>, and exploring{" "}
         <span className="keyword">Spanish</span>.
       </p>

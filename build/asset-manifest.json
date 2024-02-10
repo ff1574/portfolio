@@ -1,29 +1,23 @@
 {
   "files": {
-    "main.css": "/ff1574/static/css/main.5108d131.chunk.css",
-    "main.js": "/ff1574/static/js/main.77781822.chunk.js",
-    "main.js.map": "/ff1574/static/js/main.77781822.chunk.js.map",
-    "runtime-main.js": "/ff1574/static/js/runtime-main.ae444ef9.js",
-    "runtime-main.js.map": "/ff1574/static/js/runtime-main.ae444ef9.js.map",
-    "static/js/2.ccbe3aa8.chunk.js": "/ff1574/static/js/2.ccbe3aa8.chunk.js",
-    "static/js/2.ccbe3aa8.chunk.js.map": "/ff1574/static/js/2.ccbe3aa8.chunk.js.map",
-    "index.html": "/ff1574/index.html",
-    "static/css/main.5108d131.chunk.css.map": "/ff1574/static/css/main.5108d131.chunk.css.map",
-    "static/js/2.ccbe3aa8.chunk.js.LICENSE.txt": "/ff1574/static/js/2.ccbe3aa8.chunk.js.LICENSE.txt",
-    "static/media/among-us.2dd93716.jpg": "/ff1574/static/media/among-us.2dd93716.jpg",
-    "static/media/dad-bot.f20b24a4.jpg": "/ff1574/static/media/dad-bot.f20b24a4.jpg",
-    "static/media/gmail.146cf7ed.png": "/ff1574/static/media/gmail.146cf7ed.png",
-    "static/media/linkedin.9640f9e7.webp": "/ff1574/static/media/linkedin.9640f9e7.webp",
-    "static/media/openai.db76b33e.png": "/ff1574/static/media/openai.db76b33e.png",
-    "static/media/pizzeria.eb6eb963.png": "/ff1574/static/media/pizzeria.eb6eb963.png",
-    "static/media/pokedex.701b5c4f.jpg": "/ff1574/static/media/pokedex.701b5c4f.jpg",
-    "static/media/portrait.fe9ee103.png": "/ff1574/static/media/portrait.fe9ee103.png",
-    "static/media/tunisia.1f0468cc.jpg": "/ff1574/static/media/tunisia.1f0468cc.jpg"
+    "main.css": "./static/css/main.37822e6b.css",
+    "main.js": "./static/js/main.573eb455.js",
+    "static/media/openai.png": "./static/media/openai.db76b33e3e6abc170339.png",
+    "static/media/portrait.png": "./static/media/portrait.fe9ee103ee002d171e42.png",
+    "static/media/Franko_Fister_CV_Eng.pdf": "./static/media/Franko_Fister_CV_Eng.6aafc56c555c7f8912f5.pdf",
+    "static/media/pokedex.jpg": "./static/media/pokedex.701b5c4fb8ed5688c306.jpg",
+    "static/media/tunisia.jpg": "./static/media/tunisia.1f0468cce84c8c7a14b9.jpg",
+    "static/media/among-us.jpg": "./static/media/among-us.2dd93716f56ec4e138f6.jpg",
+    "static/media/gmail.png": "./static/media/gmail.146cf7ede4c9babeece7.png",
+    "static/media/pizzeria.png": "./static/media/pizzeria.eb6eb963f43eed5cc57b.png",
+    "static/media/dad-bot.jpg": "./static/media/dad-bot.f20b24a458124fdda384.jpg",
+    "static/media/linkedin.webp": "./static/media/linkedin.9640f9e7e54767720894.webp",
+    "index.html": "./index.html",
+    "main.37822e6b.css.map": "./static/css/main.37822e6b.css.map",
+    "main.573eb455.js.map": "./static/js/main.573eb455.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae444ef9.js",
-    "static/js/2.ccbe3aa8.chunk.js",
-    "static/css/main.5108d131.chunk.css",
-    "static/js/main.77781822.chunk.js"
+    "static/css/main.37822e6b.css",
+    "static/js/main.573eb455.js"
   ]
 }

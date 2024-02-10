@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 import pokedex from "../Assets/Images/pokedex.jpg";
 import pizzeria from "../Assets/Images/pizzeria.png"; 
 import amongus from "../Assets/Images/among-us.jpg";

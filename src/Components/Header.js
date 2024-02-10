@@ -1,15 +1,12 @@
-import {
-  motion,
-  useMotionValue,
-  useTransform,
-  animate,
-} from "framer-motion/dist/framer-motion";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 import portrait from "../Assets/Images/portrait.png";
+import resume from "../Assets/Franko_Fister_CV_Eng.pdf";
 import GitHubIcon from "../Assets/Images/Icons/github.png";
 import LinkedInIcon from "../Assets/Images/Icons/linkedin.webp";
 import EmailIcon from "../Assets/Images/Icons/gmail.png";
 import MeritPagesIcon from "../Assets/Images/Icons/merit.png";
+import DownloadIcon from "../Assets/Images/Icons/download.png";
 
 export default function Header() {
   const titleIndex = useMotionValue(0);
@@ -100,6 +97,12 @@ export default function Header() {
           <a href="mailto:franko.fister@gmail.com">
             <img src={EmailIcon} alt="Email" />
             Gmail
+          </a>
+        </div>
+        <div>
+          <a href={resume} download>
+            <img src={DownloadIcon} alt="Download Resume / CV" />
+            <span>Download Resume</span>
           </a>
         </div>
       </div>

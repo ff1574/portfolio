@@ -59,7 +59,11 @@ const Projects = () => {
 
   return (
     <div className="projects-div">
-      <img className="projects-title-image" src={projectsTitle} alt="Projects Title" />
+      <img
+        className="projects-title-image"
+        src={projectsTitle}
+        alt="Projects Title"
+      />
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div

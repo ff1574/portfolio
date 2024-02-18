@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
+import projectsTitle from "../Assets/projects-title.gif";
 import pokedex from "../Assets/Images/pokedex.jpg";
-import pizzeria from "../Assets/Images/pizzeria.png"; 
+import pizzeria from "../Assets/Images/pizzeria.png";
 import amongus from "../Assets/Images/among-us.jpg";
 import tunisia from "../Assets/Images/tunisia.jpg";
 import openai from "../Assets/Images/openai.png";
@@ -58,7 +59,7 @@ const Projects = () => {
 
   return (
     <div className="projects-div">
-      <h2>My Projects</h2>
+      <img className="projects-title-image" src={projectsTitle} alt="Projects Title" />
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div

@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform, animate } from "framer-motion/dist/framer-motion";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 import portrait from "../Assets/Images/portrait.png";
 import resume from "../Assets/Franko_Fister_CV_Eng.pdf";

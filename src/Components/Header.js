@@ -89,6 +89,7 @@ export default function Header() {
           style={{
             translateX: cursorXSpring,
             translateY: cursorYSpring,
+            scale: 1.5,
           }}
         />
             <div className="title-div">

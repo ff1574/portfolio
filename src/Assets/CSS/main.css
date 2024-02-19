@@ -16,6 +16,7 @@
     mix-blend-mode: difference;
     background-color: white;
     z-index: 1000;
+    scale: 1.5;
 }
 
 body {

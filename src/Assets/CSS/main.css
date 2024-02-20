@@ -45,6 +45,15 @@ body {
     width: fit-content;
 }
 
+.flashy-title-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
 .title-div {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,14 @@
+/* About */
+.about-div {
+    padding: 0 10%;
+    margin-bottom: 4%;
+}
+
+.about-div h3 {
+    margin-top: 2rem;
+}
+
+.keyword {
+    color: #ff6347;
+    font-weight: bold;
+}

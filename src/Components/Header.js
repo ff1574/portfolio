@@ -6,6 +6,7 @@ import {
   useSpring,
 } from "framer-motion";
 import { useEffect, useRef } from "react";
+import headerCSS from "../Assets/CSS/header.css";
 import flashyTitle from "../Assets/flashy-title.mp4";
 import portrait from "../Assets/Images/portrait.png";
 import resume from "../Assets/Franko_Fister_CV_Eng.pdf";

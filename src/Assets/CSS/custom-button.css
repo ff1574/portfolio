@@ -1,0 +1,142 @@
+.link-button,
+.link-button *,
+.link-button :after,
+.link-button :before,
+.link-button:after,
+.link-button:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.link-button {
+    -webkit-tap-highlight-color: transparent;
+    appearance: button;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 40%;
+    margin: 20px 30% 40px 30%;
+    mask-image: radial-gradient(#000, #fff);
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.link-button:disabled {
+    cursor: default;
+}
+
+.link-button:-moz-focusring {
+    outline: auto;
+}
+
+.link-button svg {
+    display: block;
+}
+
+.link-button [hidden] {
+    display: none;
+}
+
+.link-button {
+    border-radius: 99rem;
+    border-width: 2px;
+    padding: 0.8rem 3rem;
+    z-index: 0;
+}
+
+.link-button,
+.link-button .link-button-text-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.link-button .link-button-text-container {
+    display: block;
+    mix-blend-mode: difference;
+}
+
+.link-button .link-button-text {
+    display: block;
+    position: relative;
+}
+
+.link-button:hover .link-button-text {
+    -webkit-animation: move-up-alternate 0.3s forwards;
+    animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(80%);
+    }
+
+    51% {
+        transform: translateY(-80%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-up-alternate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(80%);
+    }
+
+    51% {
+        transform: translateY(-80%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.link-button:after,
+.link-button:before {
+    --skew: 0.2;
+    background: #fff;
+    content: "";
+    display: block;
+    height: 102%;
+    left: calc(-50% - 50% * var(--skew));
+    pointer-events: none;
+    position: absolute;
+    top: -104%;
+    transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+    transition: transform 0.2s ease;
+    width: 100%;
+}
+
+.link-button:after {
+    --progress: 0%;
+    left: calc(50% + 50% * var(--skew));
+    top: 102%;
+    z-index: -1;
+}
+
+.link-button:hover:before {
+    --progress: 100%;
+}
+
+.link-button:hover:after {
+    --progress: -102%;
+}

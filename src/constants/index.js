@@ -10,22 +10,15 @@ import {
   figma,
   docker,
   threejs,
+  springboot,
+  java, 
+  csharp,
+  mssql,
+  mysql,
+  python,
+  php,
+  arduino,
 } from "../Assets/Constants";
-
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
 
 const technologies = [
   {
@@ -69,8 +62,28 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Spring Boot",
+    icon: springboot,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Microsoft Server SQL",
+    icon: mssql,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "PHP",
+    icon: php,
   },
 ];
 

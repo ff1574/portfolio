@@ -3,7 +3,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -13,13 +12,18 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import springboot from "./tech/springboot.png";
+import java from "./tech/java.png";
+import mssql from "./tech/mssql.png";
+import mysql from "./tech/mysql.png";
+import python from "./tech/python.png";
+import php from "./tech/php.png";
 
 export {
   github,
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -29,4 +33,10 @@ export {
   tailwind,
   typescript,
   threejs,
+  springboot,
+  java,
+  mssql,
+  mysql,
+  python,
+  php,
 };

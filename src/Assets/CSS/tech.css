@@ -4,5 +4,13 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 50px 50px;
+}
+
+.ball-container {
+    margin: 10px;
+    width: 100%;
+    max-width: 150px; /* Ensure the container does not overflow */
+    height: auto; /* Adjust based on aspect ratio or leave auto */
+    overflow: hidden; /* Prevents any overflow */
 }

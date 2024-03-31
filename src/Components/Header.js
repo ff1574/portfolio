@@ -108,7 +108,7 @@ export default function Header() {
           scale: 1.5,
         }}
       />
-      <div className="flashy-title-container">
+      {/* <div className="flashy-title-container">
         <video
           className="flashy-title-video"
           ref={videoRef}
@@ -117,7 +117,7 @@ export default function Header() {
           muted
           loop
         />
-      </div>
+      </div> */}
       <div className="title-div">
         <h1>Hi! My name is</h1>
         <motion.img

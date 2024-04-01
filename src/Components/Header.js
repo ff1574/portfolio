@@ -139,6 +139,12 @@ export default function Header() {
       </div>
       <div className="link-container">
         <div>
+          <a href="mailto:franko.fister@gmail.com">
+            <img src={EmailIcon} alt="Email" />
+            Gmail
+          </a>
+        </div>
+        <div>
           <a href="https://github.com/ff1574">
             <img src={GitHubIcon} alt="GitHub" />
             GitHub
@@ -157,15 +163,9 @@ export default function Header() {
           </a>
         </div>
         <div>
-          <a href="mailto:franko.fister@gmail.com">
-            <img src={EmailIcon} alt="Email" />
-            Gmail
-          </a>
-        </div>
-        <div>
           <a href={resume} download>
             <img src={DownloadIcon} alt="Download Resume / CV" />
-            <span>Download Resume</span>
+            <span>Download CV</span>
           </a>
         </div>
       </div>

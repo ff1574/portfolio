@@ -1,5 +1,5 @@
 import React, { Suspense, useState, useEffect, useRef } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -45,6 +45,7 @@ const BallCanvas = ({ icon }) => {
     const controls = orbitRef.current;
     if (!controls) return;
 
+    // Smoothly animate back to the initial position
     controls.reset();
   };
 
@@ -72,7 +73,6 @@ const BallCanvas = ({ icon }) => {
       frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
-      style={{ width: "150px", height: "150px" }} // Set the canvas size
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls ref={orbitRef} enableZoom={false} />

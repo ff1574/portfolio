@@ -1,6 +1,10 @@
 # My Portfolio
 
-This is a personal web portfolio built with React. It showcases my skills, projects, and provides a way to contact me.
+This is a personal web portfolio built with React, using popular libraries like Framer Motion and Three.js to showcase my skills, projects, and provide a way to contact me.
+
+## Link
+
+The project is hosted on this link `https://franko-portfolio.netlify.app/`
 
 ## Setup and Installation
 

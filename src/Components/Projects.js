@@ -39,7 +39,7 @@ const Projects = () => {
       image: dotnet,
     },
     {
-      name: "Pokedex App",
+      name: "Pokedex Mobile App",
       description:
         "This was definitely a really fun project that I did in my free time. I wanted to learn React Native so I've created a React Native app that connects to PokeAPI and displays all the original 151 Pokemon and their statistics. It was created in React Native / Expo.",
       link: "https://github.com/ff1574/pokedex",

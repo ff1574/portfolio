@@ -5,6 +5,7 @@ import customButtonCSS from "../Assets/CSS/custom-button.css";
 import projectsTitle from "../Assets/projects-title.gif";
 import carstore from "../Assets/Images/car-store.jpg";
 import carshopwebsite from "../Assets/Images/car-shop-website.png";
+import dotnet from "../Assets/Images/dotnet.png";
 import pokedex from "../Assets/Images/pokedex.jpg";
 import pizzeria from "../Assets/Images/pizzeria.png";
 import amongus from "../Assets/Images/among-us.jpg";
@@ -29,6 +30,13 @@ const Projects = () => {
         "This was a college project that taught us how to use MVC, it was challenging to implement considering that JS is a loosely typed language.",
       link: "https://github.com/ff1574/car-shop-website",
       image: carshopwebsite,
+    },
+    {
+      name: "ASP.NET / jQuery Web App",
+      description:
+        "This was a college project that taught us how to use ASP.NET and jQuery, it was challenging to implement considering that ASP.NET is a framework that I've never used before.",
+      link: "https://github.com/ff1574/dotnet-project.git",
+      image: dotnet,
     },
     {
       name: "Pokedex App",

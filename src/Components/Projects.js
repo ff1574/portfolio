@@ -12,6 +12,7 @@ import amongus from "../Assets/Images/among-us.jpg";
 import tunisia from "../Assets/Images/tunisia.jpg";
 import openai from "../Assets/Images/openai.png";
 import dadbot from "../Assets/Images/dad-bot.jpg";
+import eventmanager from "../Assets/Images/eventmanager.jpg";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -23,6 +24,13 @@ const Projects = () => {
         "This project showcases the usage and connection of React, Spring Boot, and MySQL to create a full stack web application. This project was collaborative work, which also showcases git flow, code reviews, and agile development.",
       link: "https://github.com/ff1574/car-store",
       image: carstore,
+    },
+    {
+      name: "Event Manager PHP Web App",
+      description:
+        "I wanted to implement an MVC pattern with a loosely typed language, so I've created a PHP MVC web app that connects to a MySQL database to manage events.",
+      link: "https://github.com/ff1574/event-manager-php",
+      image: eventmanager,
     },
     {
       name: "JS MVC Web App",
@@ -44,13 +52,6 @@ const Projects = () => {
         "This was definitely a really fun project that I did in my free time. I wanted to learn React Native so I've created a React Native app that connects to PokeAPI and displays all the original 151 Pokemon and their statistics. It was created in React Native / Expo.",
       link: "https://github.com/ff1574/pokedex",
       image: pokedex,
-    },
-    {
-      name: "Pizzeria Website",
-      description:
-        "This website was created for Pizzeria Il Mondo, a local pizzeria in Zagreb, Croatia. The plan is to soon recreate it using better technologies and make it work for online orders, as currently it is just a non interactible menu.",
-      link: "http://www.ilmondopizzeria.hr/",
-      image: pizzeria,
     },
     {
       name: "Among Us Game",

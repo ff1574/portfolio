@@ -57,7 +57,12 @@ body {
     }
 
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
     }
 
     /* Project Modal */

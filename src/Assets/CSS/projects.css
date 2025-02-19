@@ -52,7 +52,7 @@
 
 @media (hover: hover) and (pointer: fine) {
     .project-item:hover img {
-        cursor: pointer;
+        cursor: none;
     }
 
     .project-item:hover .project-name {

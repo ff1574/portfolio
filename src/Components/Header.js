@@ -5,7 +5,7 @@ import {
   animate,
   useSpring,
 } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../Assets/CSS/header.css";
 import portrait from "../Assets/Images/portrait.png";
 import resume from "../Assets/Franko_Fister_CV_Eng.pdf";
@@ -17,6 +17,32 @@ import DownloadIcon from "../Assets/Images/Icons/download.png";
 
 export default function Header() {
   const videoRef = useRef(null);
+
+  // State to detect mobile devices and to manage click ripple effects
+  const [isMobile, setIsMobile] = useState(false);
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+  const cursorVariants = {
+    default: {
+      scale: 1.5,
+      opacity: 1,
+    },
+    click: {
+      scale: 1.2,
+      opacity: 0.8,
+      transition: { type: "spring", stiffness: 300, damping: 10 },
+    },
+  };
+
+  // Detect mobile devices based on window width
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, []);
 
   // Set the top margin of title-div to value of the height of video
   useEffect(() => {
@@ -38,7 +64,7 @@ export default function Header() {
 
   const titleIndex = useMotionValue(0);
   const titles = [
-    "Full Stack Developer",
+    "Full Stack Engineer",
     "React.js",
     "Spring Boot",
     "React Native",
@@ -76,7 +102,7 @@ export default function Header() {
         },
       });
     }, 2000); // delay the start of the text animation by 2 seconds
-    return () => clearTimeout(timer); // clear the timer when the component unmounts
+    return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -91,11 +117,22 @@ export default function Header() {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
     };
-    window.addEventListener("mousemove", moveCursor);
+
+    const handleMouseDown = () => setCursorVariant("click");
+    const handleMouseUp = () => setCursorVariant("default");
+
+    if (!isMobile) {
+      window.addEventListener("mousemove", moveCursor);
+      window.addEventListener("mousedown", handleMouseDown);
+      window.addEventListener("mouseup", handleMouseUp);
+    }
+
     return () => {
       window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mouseup", handleMouseUp);
     };
-  }, [cursorX, cursorY]);
+  }, [cursorX, cursorY, isMobile]);
 
   return (
     <header className="header-div">
@@ -104,8 +141,9 @@ export default function Header() {
         style={{
           translateX: cursorXSpring,
           translateY: cursorYSpring,
-          scale: 1.5,
         }}
+        variants={cursorVariants}
+        animate={cursorVariant}
       />
       {/* <div className="flashy-title-container">
         <video
@@ -131,7 +169,7 @@ export default function Header() {
             type: "spring",
             stiffness: 200, // increase stiffness
             damping: 10, // decrease damping
-          }} // more pronounced spring bounce effect
+          }}
         />
         <h1>Franko</h1>
         <motion.h2 className="title-animation">{displayTitle}</motion.h2>

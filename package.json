@@ -4,7 +4,7 @@
   "description": "Web portfolio made with React.js",
   "main": "src/index.js",
   "engines": {
-    "node": "16.13.1"
+    "node": "18.20.5"
   },
   "babel": {
     "presets": [
@@ -31,15 +31,12 @@
   "dependencies": {
     "@react-three/drei": "^9.103.0",
     "@react-three/fiber": "^8.16.1",
-    "@svgr/cli": "^8.1.0",
-    "framer-motion": "^11.0.3",
+    "framer-motion": "^12.4.4",
     "portfolio": "file:",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
-    "react-transition-group": "^4.4.5",
-    "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.163.0"
+    "three": "^0.173.0"
   },
   "browserslist": {
     "production": [
@@ -55,7 +52,6 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0"
   },

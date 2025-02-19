@@ -7,7 +7,6 @@ import carstore from "../Assets/Images/car-store.jpg";
 import carshopwebsite from "../Assets/Images/car-shop-website.png";
 import dotnet from "../Assets/Images/dotnet.png";
 import pokedex from "../Assets/Images/pokedex.jpg";
-import pizzeria from "../Assets/Images/pizzeria.png";
 import amongus from "../Assets/Images/among-us.jpg";
 import tunisia from "../Assets/Images/tunisia.jpg";
 import openai from "../Assets/Images/openai.png";
@@ -81,7 +80,6 @@ const Projects = () => {
       link: "https://github.com/ff1574/dad-bot",
       image: dadbot,
     },
-    // Add more projects as needed
   ];
 
   return (

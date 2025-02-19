@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import projectsCSS from "../Assets/CSS/projects.css";
-import customButtonCSS from "../Assets/CSS/custom-button.css";
+import "../Assets/CSS/projects.css";
+import "../Assets/CSS/custom-button.css";
 import projectsTitle from "../Assets/projects-title.gif";
 import carstore from "../Assets/Images/car-store.jpg";
 import carshopwebsite from "../Assets/Images/car-shop-website.png";

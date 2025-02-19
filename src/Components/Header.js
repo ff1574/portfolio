@@ -6,8 +6,7 @@ import {
   useSpring,
 } from "framer-motion";
 import { useEffect, useRef } from "react";
-import headerCSS from "../Assets/CSS/header.css";
-import flashyTitle from "../Assets/flashy-title.mp4";
+import "../Assets/CSS/header.css";
 import portrait from "../Assets/Images/portrait.png";
 import resume from "../Assets/Franko_Fister_CV_Eng.pdf";
 import GitHubIcon from "../Assets/Images/Icons/github.png";
@@ -83,7 +82,7 @@ export default function Header() {
 
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  const springConfig = { damping: 1000, stiffness: 10000 };
+  const springConfig = { damping: 400, stiffness: 10000 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -141,25 +140,25 @@ export default function Header() {
         <div>
           <a href="mailto:franko.fister@gmail.com">
             <img src={EmailIcon} alt="Email" />
-            Gmail
+            <span>Gmail</span>
           </a>
         </div>
         <div>
           <a href="https://github.com/ff1574">
             <img src={GitHubIcon} alt="GitHub" />
-            GitHub
+            <span>GitHub</span>
           </a>
         </div>
         <div>
           <a href="https://linkedin.com/in/franko-fišter-b55621274">
             <img src={LinkedInIcon} alt="LinkedIn" />
-            LinkedIn
+            <span>LinkedIn</span>
           </a>
         </div>
         <div>
           <a href="https://meritpages.com/ff1574 ">
             <img src={MeritPagesIcon} alt="Merit Pages" />
-            Merit Page
+            <span>Merit Page</span>
           </a>
         </div>
         <div>
